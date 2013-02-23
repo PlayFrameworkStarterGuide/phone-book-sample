@@ -1,0 +1,16 @@
+@(entries: Seq[Entry])
+
+<table class="table table-hover">
+  @for(entry <- entries; id <- entry.id) {
+    <tr>
+      <td>
+        <strong>@entry.name</strong><br>
+        <a href="tel:@entry.phone">@entry.phone</a>
+        <form action="@routes.Entries.remove(id)" method="POST">
+          <a href="@routes.Entries.edit(id)" class="btn btn-small">Edit</a>
+          <input type="submit" value="Remove" class="btn btn-small">
+        </form>
+      </td>
+    </tr>
+  }
+</table>

@@ -1,0 +1,27 @@
+@(content: Html)
+
+@style(asset: String) = {
+  <link rel="stylesheet" href="@routes.Assets.at(asset)">
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Play Framework Starter Guide</title>
+    @style("bootstrap/css/bootstrap.css")
+    @style("bootstrap/css/bootstrap-responsive.css")
+    @style("stylesheets/main.css")
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Phonebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      @content
+    </div>
+  </body>
+</html>

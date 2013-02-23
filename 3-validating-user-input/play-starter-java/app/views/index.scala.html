@@ -1,0 +1,16 @@
+@(entries: Seq[Entry])
+
+@main {
+
+  <form action="@routes.Entries.list()" method="GET">
+    <div class="input-append">
+      <input type="text" name="filter" class="input-xxlarge" autofocus="">
+      <button type="submit" class="btn">Search</button>
+    </div>
+  </form>
+
+  <a href="@routes.Entries.add()" class="btn btn-small btn-primary">New entry</a>
+
+  @list(entries)
+
+}

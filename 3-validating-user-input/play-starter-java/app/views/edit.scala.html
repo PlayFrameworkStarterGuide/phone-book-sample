@@ -1,0 +1,33 @@
+@(entryForm: Form[Entry], heading: String)
+
+@main {
+
+  <h1>@heading</h1>
+
+  <form action="@routes.Entries.save()" method="POST">
+    <input type="hidden" name="id" value="@entryForm("id").value">
+    <div class="control-group @if(entryForm("name").hasErrors) {error}">
+      <label for="name">Name</label>
+      <div class="input">
+        <input type="text" id="name" name="name" value="@entryForm("name").value" autofocus="">
+        <span class="help-inline">@(entryForm("name").errors.map { e =>
+            play.api.i18n.Messages(e.message, e.arguments: _*)
+        }.mkString(", "))</span>
+      </div>
+    </div>
+    <div class="control-group @if(entryForm("phone").hasErrors) {error}">
+      <label for="phone">Phone</label>
+      <div class="input">
+        <input type="text" id="phone" name="phone" value="@entryForm("phone").value">
+        <span class="help-inline">@(entryForm("phone").errors.map { e =>
+            play.api.i18n.Messages(e.message, e.arguments: _*)
+        }.mkString(", "))</span>
+      </div>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Save</button>
+      <a class="btn" href="@routes.Entries.list()">Cancel</a>
+    </div>
+  </form>
+
+}
