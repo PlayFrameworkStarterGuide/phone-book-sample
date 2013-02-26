@@ -16,7 +16,7 @@ case class Entry(name: String = "", phone: String = "", id: Option[Long] = None)
 
 trait EntriesComponent { self: Profile =>
 
-  import profile.simple._
+  import driver.simple._
   import Database.threadLocalSession
 
   object Entries extends Table[Entry]("ENTRY") {

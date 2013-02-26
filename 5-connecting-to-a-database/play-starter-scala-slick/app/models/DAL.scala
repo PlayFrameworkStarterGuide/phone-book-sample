@@ -14,7 +14,8 @@ package models
 
 trait Profile {
 
-  val profile: slick.driver.ExtendedProfile
+  val driver: slick.driver.ExtendedProfile // JdbcDriver with Slick 1.1+
+
   val db: scala.slick.session.Database
 
 }
@@ -25,7 +26,7 @@ import scala.slick.session.Database
 
 object DAL extends EntriesComponent /* with OtherComponent */ with Profile {
 
-  val profile = scala.slick.driver.H2Driver
+  val driver = scala.slick.driver.H2Driver
 
   val db = Database.forDataSource(DB.getDataSource("default"))
 
