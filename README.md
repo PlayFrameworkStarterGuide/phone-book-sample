@@ -1,15 +1,14 @@
+Instant Play Framework Starter
+==============================
 
-Play Framework Starter Guide
-============================
-
-Here you find the source code of the phone book sample application for **[Play Framework Starter Guide](http://bit.ly/PlayStarter)**.
+Here you find the source code of the phone book sample application for **[Instant Play Framework Starter](http://bit.ly/PlayStarter)**.
 
 The book
 --------
 
-The book [Play Framework Starter Guide](http://bit.ly/PlayStarter) is published by Packt Publishing.
+The book [Instant Play Framework Starter](http://bit.ly/PlayStarter) is published by Packt Publishing.
 
-[![Play Framework Starter Guide](http://www.packtpub.com/sites/default/files/packt_logo.png)](http://bit.ly/PlayStarter)
+[![Instant Play Framework Starter](https://secure.gravatar.com/avatar/e8ffbf9ab58bd1b6a754a0965832dd96?s=400)](http://bit.ly/PlayStarter)
 
 The sample application
 ----------------------
@@ -18,11 +17,11 @@ The sample created throughout the book is a prototype of a phone book applicatio
 
 Each part of the book is bundled in a separate project:
 
-* [1 - Designing a Play application](https://github.com/PlayFrameworkStarterGuide/phone-book-sample/tree/master/1-designing-a-play-application)
-* [2 - Defining a form](https://github.com/PlayFrameworkStarterGuide/phone-book-sample/tree/master/2-defining-a-form)
-* [3 - Validating user input](https://github.com/PlayFrameworkStarterGuide/phone-book-sample/tree/master/3-validating-user-input)
-* [4 - Using form template helpers](https://github.com/PlayFrameworkStarterGuide/phone-book-sample/tree/master/4-using-form-template-helpers)
-* [5 - Connecting to a database](https://github.com/PlayFrameworkStarterGuide/phone-book-sample/tree/master/5-connecting-to-a-database)
+* [1 - Designing a Play application](https://github.com/PlayFrameworkStarter/phone-book-sample/tree/master/1-designing-a-play-application)
+* [2 - Defining a form](https://github.com/PlayFrameworkStarter/phone-book-sample/tree/master/2-defining-a-form)
+* [3 - Validating user input](https://github.com/PlayFrameworkStarter/phone-book-sample/tree/master/3-validating-user-input)
+* [4 - Using form template helpers](https://github.com/PlayFrameworkStarter/phone-book-sample/tree/master/4-using-form-template-helpers)
+* [5 - Connecting to a database](https://github.com/PlayFrameworkStarter/phone-book-sample/tree/master/5-connecting-to-a-database)
 
 The author
 ----------
