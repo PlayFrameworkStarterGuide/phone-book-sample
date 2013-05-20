@@ -1,6 +1,6 @@
 /*
  *
- * Play Framework Starter Guide
+ * Instant Play Framework Starter
  * Phone Book Example
  *   ______  ___                             ___                     ___ __
  *  /   _  \/  /__  ______  ______  ______  /  /__  ______  ______  /  /  /
@@ -28,7 +28,5 @@ public class Entry {
 		message = "Optional +, followed by digits & spaces"
 	)
 	public String phone;
-
-	public Entry() {}
 
 }

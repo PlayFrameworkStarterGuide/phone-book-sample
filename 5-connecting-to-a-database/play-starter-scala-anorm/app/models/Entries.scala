@@ -1,6 +1,6 @@
 /*
  *
- * Play Framework Starter Guide
+ * Instant Play Framework Starter
  * Phone Book Example
  *   ______  ___                             ___                     ___ __
  *  /   _  \/  /__  ______  ______  ______  /  /__  ______  ______  /  /  /
